@@ -1,0 +1,132 @@
+/* css/media.css */
+
+#media {
+    padding: 60px 0;
+    background-color: #ffffff;
+}
+
+#media h2 {
+    text-align: center;
+    font-size: 2.5em;
+    font-weight: 400;
+    margin-bottom: 40px;
+    color: #000;
+    letter-spacing: 1px;
+}
+
+/* Contenedor Flex para dividir las dos columnas */
+.media-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px; /* Espacio entre el video grande y la lista */
+    max-width: 1200px;
+    max-height: 900px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Columna Izquierda: Video Principal */
+.main-video-wrapper {
+    flex: 2; /* Ocupa 2/3 del espacio */
+    box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+    border-radius: 4px;
+    overflow: hidden;
+    background-color: #000;
+    position: relative;
+}
+
+.main-video-wrapper video {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+}
+
+/* Columna Derecha: Lista de Videos */
+.video-list {
+    flex: 1; /* Ocupa 1/3 del espacio */
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Espacio entre las miniaturas */
+    height: 100%;
+}
+
+/* Items individuales de la lista */
+.video-item {
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+    border-radius: 4px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.video-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0,0,0,0.2);
+}
+
+.video-item img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+    /* Opacidad ligera para que resalte el icono de play */
+    filter: brightness(0.8); 
+    transition: filter 0.3s;
+}
+
+.video-item:hover img {
+    filter: brightness(1);
+}
+
+/* Icono de Play sobre las miniaturas */
+.play-icon-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50px;
+    height: 50px;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    background: rgba(0,0,0,0.3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    pointer-events: none; /* Permite hacer clic en el div padre */
+}
+
+/* El triángulo de play usando CSS */
+.play-icon-overlay::after {
+    content: '';
+    display: block;
+    width: 0; 
+    height: 0; 
+    border-top: 8px solid transparent;
+    border-bottom: 8px solid transparent;
+    border-left: 14px solid #fff;
+    margin-left: 4px; /* Ajuste óptico para centrar el triángulo */
+}
+
+/* Responsividad: En celulares se pone uno debajo del otro */
+@media (max-width: 900px) {
+    .media-container {
+        flex-direction: column;
+    }
+    
+    .main-video-wrapper, .video-list {
+        flex: auto;
+        width: 100%;
+    }
+    
+    .video-list {
+        flex-direction: row; /* En móvil, lista horizontal "PENDIENTE" */
+        overflow-x: auto;
+        padding-bottom: 10px;
+    }
+    
+    .video-item {
+        min-width: 200px; /* Ancho fijo para items en carrusel móvil */
+    }
+}

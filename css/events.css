@@ -1,0 +1,113 @@
+/* css/events.css */
+
+#events {
+    padding: 60px 0;
+    margin-bottom: 80px;
+}
+
+#events h2 {
+    text-align: center;
+    font-size: 2.5em;
+    font-weight: 400;
+    margin-bottom: 40px;
+    color: #000;
+}
+
+/* Contenedor de las tarjetas */
+.events-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; /* Permite que bajen de línea si no caben */
+    gap: 30px; /* Espacio entre tarjetas */
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Diseño de la Tarjeta Individual */
+.event-card {
+    background-color: #1A3C40; /* Mismo Verde Oscuro que Shipments */
+    width: 350px; /* Ancho fijo para mantener uniformidad */
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.3s ease;
+}
+
+.event-card:hover {
+    transform: translateY(-5px); /* Pequeña animación al pasar el mouse */
+}
+
+/* Cabecera de la tarjeta (Título) */
+.event-header {
+    padding: 20px;
+    text-align: center;
+    color: white;
+    font-size: 1.2em;
+    font-weight: 400;
+}
+
+/* Área de la imagen y botón flotante */
+.event-image-wrapper {
+    position: relative;
+    width: 100%;
+    height: 400px; /* Altura fija para la imagen */
+}
+
+.event-image-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Recorta la imagen para llenar el espacio sin deformar */
+}
+
+/* Botón "See more" */
+.btn-see-more {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Centrado perfecto */
+    background-color: #c5a059; /* Color Dorado */
+    color: white;
+    padding: 10px 25px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: 600;
+    transition: background-color 0.3s;
+}
+
+.btn-see-more:hover {
+    background-color: #a9863a;
+}
+
+/* Pie de la tarjeta (Fecha) */
+.event-footer {
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Centrar contenido */
+    gap: 10px;
+    color: white;
+    background-color: #153236; /* Un tono ligeramente más oscuro para el footer */
+}
+
+/* Icono de calendario*/
+.calendar-icon img {
+    width: 20px;
+    height: 20px;
+    
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+    .events-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .event-card {
+        width: 100%;
+        max-width: 400px;
+    }
+}
