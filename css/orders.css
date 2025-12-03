@@ -19,7 +19,8 @@
     border-radius: 12px;
     padding: 20px;
     box-shadow: 0 5px 15px rgba(0,0,0,0.2);
-    width: 100%; 
+    width: 90%;
+    margin: 0 auto 40px auto; 
 }
 
 /* El título pequeño dentro de la tarjeta "List of Orders" */
@@ -37,10 +38,12 @@
     border-radius: 8px;
     display: flex; /* Para alinear imagen y texto horizontalmente */
     overflow: hidden; /* Para que la imagen respete el borde redondeado */
-    margin-bottom: 20px;
+    /*margin-bottom: 20px;*/
     align-items: center; /* Centrar verticalmente */
+    margin: 0 auto 20px auto;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
     transition: transform 0.2s ease;
+    max-width: 900px;
 }
 
 .order-row:hover {
@@ -94,7 +97,7 @@
 @media (max-width: 600px) {
     .order-row {
         flex-direction: column;
-        align-items: flex-start;
+        align-items: center;
     }
     .order-img {
         width: 100%;
