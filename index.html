@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/png" sizes="192x192"  href="img/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="img/favicon/android-icon-192x192.png">
     <title>AgaviaProfile</title>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/global.css">
@@ -14,33 +15,34 @@
     <link rel="stylesheet" href="css/orders.css">
     <link rel="stylesheet" href="css/footer.css">
 </head>
+
 <body>
     <div class="page-shadow container">
         <header class="menuUp">
             <nav class="menu">
-                    <div class="container-menu">
-                        <div class="logo">
-                            <div class="logo_name">
-                                <a href="index.html"><img id="logo_menu" src="img/logoHorizontal.webp" alt="Logo"></a>
-                            </div>
-                            <div class="icon-menu">
-                                <a id="btn-menu" class="btn-menu">
-                                    <img id="01" class="visible" src="img/menu.png" alt="logo">
-                                    <img id="02" class="invisible" src="img/cerrar.png" alt="cerrar">
-                                </a>
-                            </div>
+                <div class="container-menu">
+                    <div class="logo">
+                        <div class="logo_name">
+                            <a href="index.html"><img id="logo_menu" src="img/logoHorizontal.webp" alt="Logo"></a>
+                        </div>
+                        <div class="icon-menu">
+                            <a id="btn-menu" class="btn-menu">
+                                <img id="01" class="visible" src="img/menu.png" alt="logo">
+                                <img id="02" class="invisible" src="img/cerrar.png" alt="cerrar">
+                            </a>
                         </div>
                     </div>
+                </div>
 
-                    <div class="menu-link">
-                        <ul>
-                            <li><a href="index.html">Welcome</a></li>
-                            <li><a href="">Orders</a></li>
-                            <li><a href="">Media</a></li>
-                            <li><a href="">Events</a></li>
-                        </ul>
-                    </div>
-                </nav>
+                <div class="menu-link">
+                    <ul>
+                        <li><a href="index.html">Welcome</a></li>
+                        <li><a href="">Orders</a></li>
+                        <li><a href="">Media</a></li>
+                        <li><a href="">Events</a></li>
+                    </ul>
+                </div>
+            </nav>
         </header>
         <main>
             <section id="welcome" class="container">
@@ -48,7 +50,7 @@
                     <h1>Welcome and Enjoy</h1>
                     <h3>"The Agavia Standard: An elevated taste. An exclusive experience."</h3>
                 </div>
-                
+
                 <div class="hero-image-container">
                     <img src="img/GenteFancyDeFondoAgavia.png" alt="Agavia Experience" class="main-img">
                     <p class="image-caption">Welcome aboard to Agavia's premier exclusive community.</p>
@@ -60,7 +62,7 @@
             -->
             <section id="orders" class="container">
                 <h2>Orders</h2>
-                
+
                 <div class="orders-card">
                     <div class="orders-list-header">List of Orders</div>
 
@@ -110,17 +112,20 @@
                     </div>
 
                     <div class="video-list">
-                        <div class="video-item" onclick="changeVideo('video/Video_de_Sommelier_de_Lujo.mp4', 'video/3BotellasFondoBar.png')">
+                        <div class="video-item"
+                            onclick="changeVideo('video/Video_de_Sommelier_de_Lujo.mp4', 'video/3BotellasFondoBar.png')">
                             <img src="video/3BotellasFondoBar.png" alt="Tequila Process">
                             <div class="play-icon-overlay"></div>
                         </div>
 
-                        <div class="video-item" onclick="changeVideo('video/Video_de_Sommelier_de_Lujo.mp4', 'video/Gemini_Generated_Image_nhoayunhoayunhoa.png')">
+                        <div class="video-item"
+                            onclick="changeVideo('video/Video_de_Sommelier_de_Lujo.mp4', 'video/Gemini_Generated_Image_nhoayunhoayunhoa.png')">
                             <img src="video/Gemini_Generated_Image_nhoayunhoayunhoa.png" alt="Agavia Tasting">
                             <div class="play-icon-overlay"></div>
                         </div>
 
-                        <div class="video-item" onclick="changeVideo('video/Video_de_Sommelier_de_Lujo.mp4', 'video/GenteFancyDeFondoAgavia.png')">
+                        <div class="video-item"
+                            onclick="changeVideo('video/Video_de_Sommelier_de_Lujo.mp4', 'video/GenteFancyDeFondoAgavia.png')">
                             <img src="video/GenteFancyDeFondoAgavia.png" alt="Exclusive Party">
                             <div class="play-icon-overlay"></div>
                         </div>
@@ -130,104 +135,130 @@
 
             <section id="events">
                 <h2>Events</h2>
-                
+
                 <div class="events-container">
-                    
-                    <div class="event-card">
-                        <div class="event-header">
-                            Live tequila tasting
-                        </div>
-                        <div class="event-image-wrapper">
-                            <img src="img/3BotellasFondoBar.png" alt="Tequila Tasting">
-                            <a href="#" class="btn-see-more">See more</a>
-                        </div>
-                        <div class="event-footer">
-                            <div class="calendar-icon">
-                                <img src="img/calendar-outline.png" alt="Date">
+
+                    <div class="flip-card-scene">
+                        <div class="flip-card-inner">
+
+                            <div class="flip-card-front">
+                                <div class="event-header">Live tequila tasting</div>
+                                <div class="event-image-wrapper">
+                                    <img src="img/3BotellasFondoBar.png" alt="Tequila Tasting">
+                                    <a href="#" class="btn-see-more trigger-flip">See more</a>
+                                </div>
+                                <div class="event-footer">
+                                    <div class="calendar-icon"><img src="img/calendar-outline.png" alt="Date"></div>
+                                    <span>December 5, 2025</span>
+                                </div>
                             </div>
-                            <span>December 5, 2025</span>
+
+                            <div class="flip-card-back">
+                                <h3>Tequila Masterclass</h3>
+                                <h4>December 5, 2025</h4>
+                                <p>Join our master sommelier for an exclusive evening tasting our finest reserves. Learn
+                                    the subtle notes of wood and agave in a private setting.</p>
+                                <button class="btn-return trigger-return">Return</button>
+                            </div>
+
                         </div>
                     </div>
 
-                    <div class="event-card">
-                        <div class="event-header">
-                            Live tequila tasting
-                        </div>
-                        <div class="event-image-wrapper">
-                            <img src="img/ImagenMembership.png" alt="Outdoor Tasting">
-                            <a href="#" class="btn-see-more">See more</a>
-                        </div>
-                        <div class="event-footer">
-                            <div class="calendar-icon">
-                                <img src="img/calendar-outline.png" alt="Date">
+                    <div class="flip-card-scene">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <div class="event-header">Sunset Agave Tour</div>
+                                <div class="event-image-wrapper">
+                                    <img src="img/ImagenMembership.png" alt="Outdoor Tasting">
+                                    <a href="#" class="btn-see-more trigger-flip">See more</a>
+                                </div>
+                                <div class="event-footer">
+                                    <div class="calendar-icon"><img src="img/calendar-outline.png" alt="Date"></div>
+                                    <span>December 15, 2025</span>
+                                </div>
                             </div>
-                            <span>December 15, 2025</span>
+
+                            <div class="flip-card-back">
+                                <h3>Sunset Experience</h3>
+                                <h4>December 15, 2025</h4>
+                                <p>Experience the golden hour in our agave fields. Enjoy a guided tour followed by
+                                    cocktails and appetizers as the sun sets over Jalisco.</p>
+                                <button class="btn-return trigger-return">Return</button>
+                            </div>
                         </div>
                     </div>
 
-                    <div class="event-card">
-                        <div class="event-header">
-                            Live tequila tasting
-                        </div>
-                        <div class="event-image-wrapper">
-                            <img src="img/ImagenAgavia.png" alt="Cellar Experience">
-                            <a href="#" class="btn-see-more">See more</a>
-                        </div>
-                        <div class="event-footer">
-                            <div class="calendar-icon">
-                                <img src="img/calendar-outline.png" alt="Date">
+                    <div class="flip-card-scene">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <div class="event-header">Cellar Dinner</div>
+                                <div class="event-image-wrapper">
+                                    <img src="img/ImagenAgavia.png" alt="Cellar Experience">
+                                    <a href="#" class="btn-see-more trigger-flip">See more</a>
+                                </div>
+                                <div class="event-footer">
+                                    <div class="calendar-icon"><img src="img/calendar-outline.png" alt="Date"></div>
+                                    <span>January 19, 2026</span>
+                                </div>
                             </div>
-                            <span>January 19, 2025</span>
+
+                            <div class="flip-card-back">
+                                <h3>The Cellar Dinner</h3>
+                                <h4>January 19, 2025</h4>
+                                <p>An intimate 5-course dinner held inside our historic aging cellar. Each dish is
+                                    perfectly paired with our limited edition Añejo tequilas.</p>
+                                <button class="btn-return trigger-return">Return</button>
+                            </div>
                         </div>
                     </div>
 
                 </div>
             </section>
         </main>
-        <script>
+        <!-- <script>
             function changeVideo(videoSrc, posterSrc) {
                 var player = document.getElementById('mainPlayer');
                 player.src = videoSrc;
                 player.poster = posterSrc;
                 player.play(); // Reproduce automáticamente al cambiar
             }
-        </script>
-    </body>
-    <footer>
-        <article class="contieneFooter">
+        </script> -->
+</body>
+<footer>
+    <article class="contieneFooter">
 
         <div class="cajaFooter">
             <div class="cuarto">
                 <h3>NAVEGA</h3>
                 <ul>
-                        <li><a href="index.php#"></a>Home</li>
-                        <li><a href="index.php#"></a>Story</li>
-                        <li><a href="index.php#"></a>Collection</li>
-                        <li><a href="index.php#"></a>Memebership</li>
-                        <li><a href="index.php#"></a>Contact</li>
+                    <li><a href="index.php#"></a>Home</li>
+                    <li><a href="index.php#"></a>Story</li>
+                    <li><a href="index.php#"></a>Collection</li>
+                    <li><a href="index.php#"></a>Memebership</li>
+                    <li><a href="index.php#"></a>Contact</li>
                 </ul>
             </div><!--cuarto-->
             <div class="cuarto">
                 <h3>ATENCIÓN AL CLIENTE</h3>
-                    <ul>
-                        <li><a href="#">Aviso de Privacidad</a></li>
-                        <li><a href="#">Reportes</a></li>
-                    </ul>
+                <ul>
+                    <li><a href="#">Aviso de Privacidad</a></li>
+                    <li><a href="#">Reportes</a></li>
+                </ul>
             </div><!--cuarto-->
             <div class="cuarto">
                 <h3>CONTACTO</h3>
-                    <ul>
-                        <li><a></a></li>
-                        <li><a href=""></a> </li>
-                    </ul>
+                <ul>
+                    <li><a></a></li>
+                    <li><a href=""></a> </li>
+                </ul>
             </div><!--cuarto-->
             <div class="cuarto">
-                    <h3>SÍGUENOS</h3>
-                    <div class="contieneRedes">
-                        <a href="https://www.facebook.com/"><img src="img/facebook.svg" alt="facebook"></a>
-                        <a href="https://www.instagram.com//"><img src="img/instagram.svg" alt="instagram"></a>
-                        <a href="https://www.instagram.com//"><img src="img/youtube.svg" alt="youtube"></a>
-                    </div><!--contieneRedes-->
+                <h3>SÍGUENOS</h3>
+                <div class="contieneRedes">
+                    <a href="https://www.facebook.com/"><img src="img/facebook.svg" alt="facebook"></a>
+                    <a href="https://www.instagram.com//"><img src="img/instagram.svg" alt="instagram"></a>
+                    <a href="https://www.instagram.com//"><img src="img/youtube.svg" alt="youtube"></a>
+                </div><!--contieneRedes-->
             </div><!--cuarto-->
         </div><!--cajaFooter-->
 
@@ -235,6 +266,8 @@
     <div class="creditos">
         <p>Todos los Derechos Reservados @2025 | Agavia </p>
     </div><!-- creditos -->
-    </footer>
+</footer>
 </div>
+<link rel="script" href="js/script.js">
+
 </html>

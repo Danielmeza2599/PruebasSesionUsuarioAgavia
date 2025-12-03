@@ -3,10 +3,13 @@
                       F   O   O   T   E   R
 ============================================================================== */
 
+div.cuarto li{
+  list-style: none;
+}
 .contieneFooter{
   position: relative;
   width: 100%;
-  max-width: 1200px;
+  max-width: 1350px;
   margin: auto;
   padding: 30px 0;
   color: white;
