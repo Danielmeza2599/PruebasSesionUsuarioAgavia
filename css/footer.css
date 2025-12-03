@@ -93,6 +93,12 @@ div.cuarto li{
 /* ==============================================================================
             F   O   O   T   E   R        M   Ó   V   I   L   E   S
 ============================================================================== */
+div.cuarto li{
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
 
 .contieneFooter{
   width: 100%;
@@ -139,15 +145,20 @@ div.cuarto li{
 .contieneFooter .cajaFooter .cuarto .contieneRedes a{
   width: 40px;
   color: white;
+  display: flex;
+  justify-content: center;
 }
 .contieneFooter .cajaFooter .cuarto .contieneRedes a img{
   width: 100%;
+  display: flex;
 }
   .creditos {
   font-size: .7em;
   line-height: 1.5em;
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  align-items: center;
 }
-
-
 
 }
