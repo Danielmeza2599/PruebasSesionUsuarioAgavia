@@ -48,4 +48,8 @@ document.addEventListener('DOMContentLoaded', function() {
             });
         }
     };
+
+
+
 });
+/* Fin de js/script.js */

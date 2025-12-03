@@ -100,15 +100,53 @@ header{
   /* Media Queries */
 
 /* Dispositivos muy pequeños (teléfonos de hasta 768px de anchura) */
-/* No se define ninguna media query porque este es el estilo por
-   defecto utilizado por Bootstrap 3 */
+
+
+  /* clases utilitarias */
+.visible { display: block !important; }
+.invisible { display: none !important; }
  
 /* Dispositivos pequeños (tablets, anchura mayor o igual a 768px) */
 @media (max-width: 768px) {
 
+  /* HOVER efectos al boton hamburguesa */
+  /* estilo base del botón  */
+.menu .container-menu .logo .btn-menu {
+    display: block;
+    cursor: pointer;
+    z-index: 1001;
+    position: relative;
+    /* se quita el highlight azul por defecto en móviles al tocar */
+    -webkit-tap-highlight-color: transparent; 
+}
+
+/* se aplica la transición a la IMAGEN para que sea suave */
+.menu .container-menu .logo .btn-menu img {
+    width: 30px; 
+    height: auto;
+    /* Suaviza la transformación*/
+    transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+/* Efecto HOVER (Al pasar el mouse o foco) */
+.menu .container-menu .logo .btn-menu:hover img {
+    /* Crece un 15%  */
+    transform: scale(1.15); 
+    opacity: 0.8;
+}
+
+/* Efecto ACTIVE (Al momento exacto de tocar/clic) */
+.menu .container-menu .logo .btn-menu:active img {
+    /* Se encoge para dar sensación de botón físico presionado */
+    transform: scale(0.90);
+    opacity: 1;
+}
+/* Fin HOVER efectos al boton hamburguesa */
+
   
   header{
     background:rgba(255,255,255,0.8);
+    position: relative;
   }
     .flex-parent, .flex-child {
       display: block;
@@ -120,12 +158,21 @@ header{
       width: 200px;
       margin-top: 60%;
      }
+
+     /* Estilos del boton hamburguesa */
      .menu .container-menu .logo .btn-menu {
       display: block;
+      cursor: pointer;
+      z-index: 1001; /* Se asegura que esté por encima del menú desplegado */
+      position: relative;
      }
+
+     /* Tama;o de los iconos*/
      .menu .container-menu .logo .btn-menu img {
-      width: 50px;
+      width: 30px;
+      height: auto;
      }
+
      .menu .container-menu{
       width: 100%;
      }
@@ -135,29 +182,45 @@ header{
         align-items: center;
         justify-content: space-between;
       }
+      
+    /* El contenedor de los enlaces (Oculto por defecto a la izquierda) */  
     .menu .menu-link{
-      position: absolute;
-      background: rgba(255,255,255,.7);
+      position: fixed; /* Fixed para que cubra toda la pantalla */
+      background: #ffffff; 
       height: 100vh;
       width: 100%;
-      top: 73px;
-      left: -100%; /* Para ocultar el menu */
-      z-index: 1000;
-      backdrop-filter: blur(4px);
-      transition: 0.8s ease;
+      top: 0; /* Desde arriba del todo */
+      left: -100%; /* Oculto a la izquierda */
+      z-index: 1000; /* Debajo del botón pero encima del contenido */
+      display: flex;
+      flex-direction: column;
+      justify-content: center; /*  items centrados verticalmente */
+      align-items: center;
+      transition: left 0.5s ease; /* Animación suave */
+      padding-top: 0; /* resetear el padding */
      }
+
+     /* CLASE ACTIVA: Esto es lo que JS añadirá para mostrar el menú */
+    .menu .menu-link.active {
+        left: 0; /* Trae el menú a la pantalla */
+    }
+
+    /* Estilo de los enlaces en móvil */
+    .menu .menu-link ul {
+        width: 100%;
+        text-align: center;
+        padding: 0;
+    }
+
      .menu .menu-link ul li{
         display: block;
+        margin: 20px 0;
       }
     .menu .menu-link ul li a{
-      color: #282828;
+        font-size: 1.5em; /* Letra más grande para tocar fácil */
         display: block;
-        height: 50px;
-        border-bottom: 1px solid #a9a9a9;
-        padding: 15px;
-        text-align: center;
-        font-weight: 400;
-        margin: 0;
+        color: #000;
+        border: none; 
       }
       .registro {
         padding-top: 10px;
