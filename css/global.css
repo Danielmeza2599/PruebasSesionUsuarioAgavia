@@ -1,0 +1,26 @@
+/* css/global.css */
+
+:root {
+    --ancho-maximo: 1200px;
+}
+
+body {
+    background-color: #f9f9f9; /* Un gris muy suave de fondo para resaltar el contenido */
+    overflow-x: hidden;
+}
+
+/* clase para los márgenes */
+.container {
+    max-width: var(--ancho-maximo);
+    width: 90%; /* Ocupa el 90% en celulares */
+    margin: 0 auto; /* Esto centra el contenido y crea los márgenes a los lados */
+}
+
+/* efecto de "sombra" a los costados */
+.page-shadow {
+    background-color: #ffffff;
+    box-shadow: 0px 5px 17px 0px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 0px 5px 17px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 5px 17px 0px rgba(0,0,0,0.75);
+    min-height: 100vh;
+}

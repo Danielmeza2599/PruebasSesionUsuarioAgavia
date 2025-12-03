@@ -1,10 +1,10 @@
 /* General Reset básico */
-* {
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Montserrat', sans-serif;
-}
+} 
 
 body {
     padding-top: 80px; /* Espacio para el header fijo */
@@ -20,12 +20,14 @@ header {
   z-index: 20;
   background: #000000;
   box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+  display: flex;             /* Para centrar el contenido */
+  justify-content: center;   /* Para centrar el contenido */
 }
 
 .menu {
-  width: 95%;
-  max-width: 1350px;
-  margin: auto;
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
   padding: 1em 0;
   display: flex;
   justify-content: space-between;

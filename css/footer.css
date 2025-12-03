@@ -6,11 +6,12 @@
 .contieneFooter{
   position: relative;
   width: 100%;
-  max-width: 1350px;
+  max-width: 1200px;
   margin: auto;
   padding: 30px 0;
   color: white;
   background-color: #313331;
+  list-style: none;
 }
 .contieneFooter #contieneZapatoFooter {
   position: absolute;
@@ -23,16 +24,18 @@
 }
 .contieneFooter .cajaFooter{
   width: 80%;
-  max-width: 1400px;
+  max-width: 1200px;
   margin: auto;
   display: flex;
   justify-content: space-around;
   padding: 30px 0;
+  list-style: none;
 }
 .contieneFooter .cajaFooter .cuarto{
   width: 25%;
   text-indent: 1em;
   border-left: 1px solid gray;
+  list-style: none;
 }
 .contieneFooter .cajaFooter .cuarto h3{
   line-height: 1.6em;
@@ -40,12 +43,14 @@
   letter-spacing: 1px;
   font-size: 0.75em;
   margin-bottom: 5px;
+  list-style: none;
 }
 .contieneFooter .cajaFooter .cuarto ul li a{
   line-height: 1.6em;
   letter-spacing: 2px;
   font-size: 0.7em;
   color: white;
+  list-style: none;
 }
 .contieneFooter .cajaFooter .cuarto .contieneRedes{
   width: 90%;
@@ -53,6 +58,7 @@
   margin: auto;
   display: flex;
   justify-content: space-around;
+  list-style: none;
 }
 .contieneFooter .cajaFooter .cuarto .contieneRedes a{
   width: 40px;
