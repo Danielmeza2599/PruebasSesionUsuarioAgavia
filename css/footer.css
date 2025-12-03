@@ -5,6 +5,7 @@
 
 div.cuarto li{
   list-style: none;
+  display: flex;
 }
 .contieneFooter{
   position: relative;
