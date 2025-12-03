@@ -7,6 +7,8 @@
 body {
     background-color: #f9f9f9; /* Un gris muy suave de fondo para resaltar el contenido */
     overflow-x: hidden;
+    margin:0;
+    padding:0;
 }
 
 /* clase para los márgenes */
