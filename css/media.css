@@ -121,7 +121,7 @@
     }
     
     .video-list {
-        flex-direction: row; /* En móvil, lista horizontal "PENDIENTE" */
+        flex-direction: flex; /* En móvil, lista vertical */
         overflow-x: auto;
         padding-bottom: 10px;
     }
