@@ -37,7 +37,7 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 
     // --- LÓGICA PARA MEDIA (VIDEO) ---
-    // Hacemos la función global para que funcione con el atributo onclick en el HTML
+    //función global para que funcione con el atributo onclick en el HTML
     window.changeVideo = function(videoSrc, posterSrc) {
         var player = document.getElementById('mainPlayer');
         if (player) {
