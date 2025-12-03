@@ -26,14 +26,14 @@
 
 /* --- ESTRUCTURA FLIP CARD --- */
 
-/* 1. El escenario (define el tamaño y la perspectiva) */
+/* El escenario (define el tamaño y la perspectiva) */
 .flip-card-scene {
     width: 350px;
     height: 520px; /* Altura fija necesaria para que el frente y dorso sean iguales */
     perspective: 1000px; /* Da el efecto 3D */
 }
 
-/* 2. El objeto que gira (Inner) */
+/* El objeto que gira (Inner) */
 .flip-card-inner {
     position: relative;
     width: 100%;
@@ -50,7 +50,7 @@
     transform: rotateY(180deg);
 }
 
-/* 3. Las caras (Frente y Dorso) */
+/* Las caras (Frente y Dorso) */
 .flip-card-front, .flip-card-back {
     position: absolute;
     width: 100%;
@@ -63,7 +63,7 @@
     flex-direction: column;
 }
 
-/* --- ESTILOS DEL FRENTE (Tu diseño original) --- */
+/* --- ESTILOS DEL FRENTE --- */
 .flip-card-front {
     background-color: #1A3C40;
 }
@@ -101,7 +101,7 @@
     font-weight: 600;
     transition: background-color 0.3s;
     cursor: pointer;
-    border: none; /* Quitamos borde por si usas <button> */
+    border: none; 
 }
 
 .btn-see-more:hover {
@@ -124,7 +124,7 @@
     filter: invert(0);
 }
 
-/* --- ESTILOS DEL DORSO (Nueva descripción) --- */
+/* --- ESTILOS DEL DORSO --- */
 .flip-card-back {
     background-color: #1A3C40; /* Mismo color de fondo */
     color: white;
@@ -133,6 +133,9 @@
     justify-content: center;
     align-items: center;
     border: 2px solid #c5a059; /* Borde dorado para distinguir el reverso */
+    max-width: 80%;
+    max-height: 520px;
+    margin: 0 auto;
 }
 
 .flip-card-back h3 {
@@ -179,5 +182,6 @@
     .flip-card-scene {
         width: 100%;
         max-width: 400px;
+        margin: 0 auto 60px;
     }
 }
