@@ -19,7 +19,7 @@
     display: flex;
     justify-content: center;
     gap: 30px; /* Espacio entre el video grande y la lista */
-    max-width: 1200px;
+    max-width: 1350px;
     max-height: 900px;
     margin: 0 auto;
     padding: 0 20px;
